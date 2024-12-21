@@ -1,9 +1,7 @@
 import React from "react";
-import { check, validationResult } from 'express-validator';
 import { useFetchNestedCategoriesQuery } from "../../../services/CategorieApi";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { header } from "express-validator";
 
 const Navbar = () => {
   const { data, isFetchingNested } = useFetchNestedCategoriesQuery();
@@ -21,10 +19,9 @@ const Navbar = () => {
             to={`/categories/subcategories/${category.id}`}
             key={category.id}
           >
-            <li className="dropdown-item"  style={{padding:'10px'}}>
+            <li className="dropdown-item" style={{ padding: '10px' }}>
               {category.nom_categorie && replaceUnderscoresWithSpaces(category.nom_categorie)}
-              {category.children.length > 0 &&
-                renderNestedMenu(category.children)}
+              {category.children.length > 0 && renderNestedMenu(category.children)}
             </li>
           </Link>
         ))}
@@ -50,14 +47,13 @@ const Navbar = () => {
         <ul className="menu">
           {rootCategories?.map((category) => (
             <li key={category.id} className="menu-item">
-              <Link style={{color: "black", fontWeight: "500"}}
+              <Link style={{ color: "black", fontWeight: "500" }}
                 to={`/categories/subcategories/${category.id}`}
                 key={category.id}
               >
                 {category.nom_categorie && replaceUnderscoresWithSpaces(category.nom_categorie)}
               </Link>
-              {category.children.length > 0 &&
-                renderNestedMenu(category.children)}
+              {category.children.length > 0 && renderNestedMenu(category.children)}
             </li>
           ))}
         </ul>
