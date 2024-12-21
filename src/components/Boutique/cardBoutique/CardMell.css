@@ -1,0 +1,223 @@
+@media screen and (max-width : 600px){
+  .product-card {
+    width: 160px !important;
+    height: 220px !important;
+    margin: 10px 5px;
+  }
+  .product-image {
+    height: 150px !important;
+    overflow: hidden;
+  }
+  .buy-button {
+    width: 100px !important;
+  }
+  .product-details-one {
+    height: 60px !important;
+    padding: 0px 0 !important;
+    margin: 10px !important;
+  }
+  
+}
+
+.product-card {
+  width: 250px;
+  height: 320px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  overflow: visible; /* Allow elements to overflow */
+  position: relative; /* Set the context for absolute positioning */
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px 5px;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-image img:hover {
+  transform: scale(1.1);
+}
+
+.product-details-one {
+  height: 80px;
+  background-color: transparent;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.btn-con {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.buy-button {
+  position: absolute;
+  bottom: -15px; /* Push half the button outside the card */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00D9D3;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*---------------------- button -----------------------------------------------------------*/
+
+
+.buttonHeroCard {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Istok Web", sans-serif;
+  letter-spacing: 1px;
+  padding: 0 12px;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 3px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  transform: translateY(0px);
+  position: relative;
+  box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #0f988e,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  background: #15ccbe;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  transition: 150ms all ease-in-out;
+}
+
+.buttonHeroCard .pluss {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+.buttonHeroCard:hover .AddText {
+  transform: translateX(80px);
+}
+.buttonHeroCard:hover .pluss {
+  transform: translate(25px);
+  margin-top: -25px;
+  padding-top: 0;
+  font-size: 30px;
+}
+
+.AddText {
+  transition: all 0.5s ease-in-out;
+}
+
+
+/*------------------------------------------------------  NextButton ------------------------------------------------*/
+
+.slider-container .NextButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #3d3d3d;
+  background-color: #fff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.573);
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.slider-container .NextButton:hover {
+    background-color: #17ada0;
+    box-shadow: 0 0 0 5px #15ccbd58;
+    color: #fff;
+  
+}
+
+.slider-container .NextButton:focus {
+  background-color: #17ada0;
+  box-shadow: 0 0 0 0px #15ccbd00;
+  color: #fff;
+
+}
+
+.titreDeco {
+  font-size: 50px;
+  color: #15ccbe;
+}
+
+
+/*--------------------- modanl --------------*/
+.article-container-outer {
+  padding: 2rem 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.article-container-outer .image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}

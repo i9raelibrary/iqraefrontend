@@ -1,0 +1,79 @@
+.filter-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+.boxSideBar {
+  width: 20%;
+}
+.sideBar {
+  /* position: fixed; */
+  min-width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 800px) {
+  .sideBardisplay {
+    display: none;
+  }
+}
+
+.tree-container {
+  width: 100%;
+}
+
+.boutique-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.boutique-container-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 800px) {
+  .boutique-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    /* width: 100%;  */
+  }
+  .boutique-container-box {
+    display: flex;
+
+    justify-content: center;
+  }
+}
+
+.parent-categs {
+  /* margin: 10px 0; */
+  text-decoration: none;
+}
+.parent-categs p {
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  background-color: #eceef0;
+  padding: 10px 20px;
+  margin: 5px 5px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.parent-categs p:hover {
+  background-color: #e3e1e1;
+  transform: scale(1.03);
+}
+
+.parent-categs p:active {
+  background-color: #255a91;
+}

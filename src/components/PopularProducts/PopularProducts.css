@@ -1,0 +1,160 @@
+.slider-container {
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    width: 90%;
+    /* padding: 20px; */
+}
+
+.mygradient {
+    background: linear-gradient(90deg, rgba(132, 230, 255, 0.296), rgba(0, 128, 255, 0.348));
+}
+
+.background{
+    padding: 20px;
+    position: absolute;
+    margin-top: 4px;
+    width: 100%;
+    height: 340px;
+}
+
+
+.slider-container h2 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.slider-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 50px;
+    transition: transform 0.5s ease;
+    /* overflow: hidden; */
+}
+
+.slider-card {
+    flex: 0 0 20%;
+    box-sizing: border-box;
+    padding: 0px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 0px;
+}
+
+.slider-card img {
+    width: 100px;
+    height: 180px;
+    object-fit: fill;
+    margin-bottom: 10px;
+
+}
+
+.slider-card h3 {
+    font-size: 16px;
+    color: #232F88;
+    margin: 5px 0;
+}
+
+.slider-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+
+.add-button {
+    background-color: #232F88;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.slider-button {
+    background-color: grey;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-button.left {
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: rgb(90, 90, 90);
+    font-weight: 700;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.088);
+    z-index: 10;
+}
+
+.slider-button.right {
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: rgb(90, 90, 90);
+    font-weight: 700;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.088);
+    transition: all 0.5 linear;
+    z-index: 10;
+}
+
+.slider-button.right:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.207);
+}
+
+.slider-button.right:focus {
+    box-shadow: 0 0px 0 5px rgba(157, 232, 255, 0.323);
+    background-color: #aae3ff;
+}
+
+
+.slider-button.left:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.207);
+}
+
+.slider-button.left:focus {
+    box-shadow: 0 0px 0 5px rgba(157, 232, 255, 0.323);
+    background-color: #aae3ff;
+}
+
+.background .titreDeco {
+    max-width: 1000px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #1a237e;
+  }
+
+  .whiteBcgr {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background-color: #fff;
+  }

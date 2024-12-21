@@ -1,0 +1,45 @@
+.stats-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.stats-title {
+  text-align: center;
+  font-weight: 700 !important;
+  color: #1a237e;
+  margin-bottom: 1rem !important;
+}
+
+.stats-subtitle {
+  text-align: center;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 3rem auto !important;
+}
+
+.stats-grid {
+  margin-top: 2rem;
+  animation: reveal linear ;
+  animation-timeline : scroll();
+}
+
+@keyframes reveal {
+  0%{
+    margin-top: 100px;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+

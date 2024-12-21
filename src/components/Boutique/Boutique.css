@@ -1,0 +1,166 @@
+.boutique {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.boutique-title {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.boutique-title h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.boutique .card-bout {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boutique .card-bout:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-bout img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-bout .details {
+  padding: 15px;
+}
+
+.card-bout .details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-bout .details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.card-bout .details .price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card-bout .details .stock {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.card-bout .details .add-to-cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.card-bout .details .add-to-cart button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-bout .details .add-to-cart button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 1200px) {
+  .boutique {
+    gap: 15px;
+  }
+
+  .card-bout {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .boutique {
+    gap: 10px;
+  }
+
+  .card-bout {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-bout .details h3 {
+    font-size: 16px;
+  }
+
+  .card-bout .details .price {
+    font-size: 16px;
+  }
+}
+
+
+/* 
+  *
+  * Pagination Controls */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 2rem;
+  gap: 10px;
+  /* Spacing between elements */
+}
+
+.pagination button {
+  padding: 0px 10px;
+  border: 1px solid black;
+  background-color: #00D9D3;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #00aca7;
+}
+
+.pagination span {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
